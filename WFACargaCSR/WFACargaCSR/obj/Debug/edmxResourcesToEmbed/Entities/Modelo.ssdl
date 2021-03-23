@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_A3F19C_OGModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="csr">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeroCuenta" Type="varchar" MaxLength="50" />
+    <Property Name="Guia" Type="varchar" MaxLength="50" />
+    <Property Name="PieceID" Type="varchar" MaxLength="50" />
+    <Property Name="Referencia" Type="varchar" MaxLength="50" />
+    <Property Name="IATAOrigen" Type="varchar" MaxLength="50" />
+    <Property Name="CiudadOrigen" Type="varchar(max)" />
+    <Property Name="IATADestino" Type="varchar" MaxLength="50" />
+    <Property Name="CiudadDestino" Type="varchar" MaxLength="50" />
+    <Property Name="SVCSubIATA" Type="varchar" MaxLength="50" />
+    <Property Name="Ruta" Type="varchar" MaxLength="50" />
+    <Property Name="Piezas" Type="int" />
+    <Property Name="Peso" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FechaRecoleccion" Type="date" />
+    <Property Name="FechaPrimerCheckpointTerminal" Type="date" />
+    <Property Name="HoraPrimerCheckpointTerminal" Type="varchar" MaxLength="50" />
+    <Property Name="PrimerCheckpointTerminal" Type="varchar" MaxLength="50" />
+    <Property Name="DescripcionPrimerCheckTerminal" Type="varchar" MaxLength="100" />
+    <Property Name="DetallesEntregaComentarios" Type="varchar(max)" />
+    <Property Name="TiempoTransitoEstimado" Type="int" />
+    <Property Name="TiempoTransitoRealizado" Type="int" />
+    <Property Name="IntentosEntrega" Type="int" />
+    <Property Name="CausaDemora" Type="varchar(max)" />
+    <Property Name="FechaIngresoCC" Type="date" />
+    <Property Name="DiasCC" Type="int" />
+    <Property Name="Producto" Type="varchar" MaxLength="50" />
+    <Property Name="ValorSeguro" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="NombreRemitente" Type="varchar" MaxLength="100" />
+    <Property Name="ContactoRemitente" Type="varchar" MaxLength="100" />
+    <Property Name="DireccionRemitente" Type="varchar(max)" />
+    <Property Name="CPRemitente" Type="varchar" MaxLength="50" />
+    <Property Name="NombreDestinatario" Type="varchar(max)" />
+    <Property Name="ContactoDestinatario" Type="varchar(max)" />
+    <Property Name="DireccionDestinatario" Type="varchar(max)" />
+    <Property Name="CPDestinatario" Type="varchar" MaxLength="50" />
+    <Property Name="UltimoCheckpoint" Type="varchar" MaxLength="50" />
+    <Property Name="FechaUltimoCheckpoint" Type="date" />
+    <Property Name="HoraUltimoCheckpoint" Type="varchar" MaxLength="50" />
+    <Property Name="detalleultimocheckpoint" Type="varchar(max)" />
+    <Property Name="FechaCarga" Type="date" />
+  </EntityType>
+  <EntityContainer Name="DB_A3F19C_OGModelStoreContainer">
+    <EntitySet Name="csr" EntityType="Self.csr" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

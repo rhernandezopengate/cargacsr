@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFACargaCSR", "WFACargaCSR\WFACargaCSR.csproj", "{ACA220BB-3B57-4DDA-B0BD-AC35D32ABFAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACA220BB-3B57-4DDA-B0BD-AC35D32ABFAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA220BB-3B57-4DDA-B0BD-AC35D32ABFAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA220BB-3B57-4DDA-B0BD-AC35D32ABFAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA220BB-3B57-4DDA-B0BD-AC35D32ABFAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C78EC81E-51C7-4401-9D0C-713B7DD0BA7E}
+	EndGlobalSection
+EndGlobal

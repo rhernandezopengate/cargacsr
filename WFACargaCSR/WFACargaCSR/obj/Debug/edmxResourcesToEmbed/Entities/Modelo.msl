@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_A3F19C_OGModelStoreContainer" CdmEntityContainer="DB_A3F19C_OGEntities">
+    <EntitySetMapping Name="csr">
+      <EntityTypeMapping TypeName="DB_A3F19C_OGModel.csr">
+        <MappingFragment StoreEntitySet="csr">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="NumeroCuenta" ColumnName="NumeroCuenta" />
+          <ScalarProperty Name="Guia" ColumnName="Guia" />
+          <ScalarProperty Name="PieceID" ColumnName="PieceID" />
+          <ScalarProperty Name="Referencia" ColumnName="Referencia" />
+          <ScalarProperty Name="IATAOrigen" ColumnName="IATAOrigen" />
+          <ScalarProperty Name="CiudadOrigen" ColumnName="CiudadOrigen" />
+          <ScalarProperty Name="IATADestino" ColumnName="IATADestino" />
+          <ScalarProperty Name="CiudadDestino" ColumnName="CiudadDestino" />
+          <ScalarProperty Name="SVCSubIATA" ColumnName="SVCSubIATA" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Piezas" ColumnName="Piezas" />
+          <ScalarProperty Name="Peso" ColumnName="Peso" />
+          <ScalarProperty Name="FechaRecoleccion" ColumnName="FechaRecoleccion" />
+          <ScalarProperty Name="FechaPrimerCheckpointTerminal" ColumnName="FechaPrimerCheckpointTerminal" />
+          <ScalarProperty Name="HoraPrimerCheckpointTerminal" ColumnName="HoraPrimerCheckpointTerminal" />
+          <ScalarProperty Name="PrimerCheckpointTerminal" ColumnName="PrimerCheckpointTerminal" />
+          <ScalarProperty Name="DescripcionPrimerCheckTerminal" ColumnName="DescripcionPrimerCheckTerminal" />
+          <ScalarProperty Name="DetallesEntregaComentarios" ColumnName="DetallesEntregaComentarios" />
+          <ScalarProperty Name="TiempoTransitoEstimado" ColumnName="TiempoTransitoEstimado" />
+          <ScalarProperty Name="TiempoTransitoRealizado" ColumnName="TiempoTransitoRealizado" />
+          <ScalarProperty Name="IntentosEntrega" ColumnName="IntentosEntrega" />
+          <ScalarProperty Name="CausaDemora" ColumnName="CausaDemora" />
+          <ScalarProperty Name="FechaIngresoCC" ColumnName="FechaIngresoCC" />
+          <ScalarProperty Name="DiasCC" ColumnName="DiasCC" />
+          <ScalarProperty Name="Producto" ColumnName="Producto" />
+          <ScalarProperty Name="ValorSeguro" ColumnName="ValorSeguro" />
+          <ScalarProperty Name="NombreRemitente" ColumnName="NombreRemitente" />
+          <ScalarProperty Name="ContactoRemitente" ColumnName="ContactoRemitente" />
+          <ScalarProperty Name="DireccionRemitente" ColumnName="DireccionRemitente" />
+          <ScalarProperty Name="CPRemitente" ColumnName="CPRemitente" />
+          <ScalarProperty Name="NombreDestinatario" ColumnName="NombreDestinatario" />
+          <ScalarProperty Name="ContactoDestinatario" ColumnName="ContactoDestinatario" />
+          <ScalarProperty Name="DireccionDestinatario" ColumnName="DireccionDestinatario" />
+          <ScalarProperty Name="CPDestinatario" ColumnName="CPDestinatario" />
+          <ScalarProperty Name="UltimoCheckpoint" ColumnName="UltimoCheckpoint" />
+          <ScalarProperty Name="FechaUltimoCheckpoint" ColumnName="FechaUltimoCheckpoint" />
+          <ScalarProperty Name="HoraUltimoCheckpoint" ColumnName="HoraUltimoCheckpoint" />
+          <ScalarProperty Name="detalleultimocheckpoint" ColumnName="detalleultimocheckpoint" />
+          <ScalarProperty Name="FechaCarga" ColumnName="FechaCarga" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

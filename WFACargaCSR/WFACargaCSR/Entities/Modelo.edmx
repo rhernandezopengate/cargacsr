@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DB_A3F19C_OGModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="csr">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NumeroCuenta" Type="varchar" MaxLength="50" />
+          <Property Name="Guia" Type="varchar" MaxLength="50" />
+          <Property Name="PieceID" Type="varchar" MaxLength="50" />
+          <Property Name="Referencia" Type="varchar" MaxLength="50" />
+          <Property Name="IATAOrigen" Type="varchar" MaxLength="50" />
+          <Property Name="CiudadOrigen" Type="varchar(max)" />
+          <Property Name="IATADestino" Type="varchar" MaxLength="50" />
+          <Property Name="CiudadDestino" Type="varchar" MaxLength="50" />
+          <Property Name="SVCSubIATA" Type="varchar" MaxLength="50" />
+          <Property Name="Ruta" Type="varchar" MaxLength="50" />
+          <Property Name="Piezas" Type="int" />
+          <Property Name="Peso" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="FechaRecoleccion" Type="date" />
+          <Property Name="FechaPrimerCheckpointTerminal" Type="date" />
+          <Property Name="HoraPrimerCheckpointTerminal" Type="varchar" MaxLength="50" />
+          <Property Name="PrimerCheckpointTerminal" Type="varchar" MaxLength="50" />
+          <Property Name="DescripcionPrimerCheckTerminal" Type="varchar" MaxLength="100" />
+          <Property Name="DetallesEntregaComentarios" Type="varchar(max)" />
+          <Property Name="TiempoTransitoEstimado" Type="int" />
+          <Property Name="TiempoTransitoRealizado" Type="int" />
+          <Property Name="IntentosEntrega" Type="int" />
+          <Property Name="CausaDemora" Type="varchar(max)" />
+          <Property Name="FechaIngresoCC" Type="date" />
+          <Property Name="DiasCC" Type="int" />
+          <Property Name="Producto" Type="varchar" MaxLength="50" />
+          <Property Name="ValorSeguro" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="NombreRemitente" Type="varchar" MaxLength="100" />
+          <Property Name="ContactoRemitente" Type="varchar" MaxLength="100" />
+          <Property Name="DireccionRemitente" Type="varchar(max)" />
+          <Property Name="CPRemitente" Type="varchar" MaxLength="50" />
+          <Property Name="NombreDestinatario" Type="varchar(max)" />
+          <Property Name="ContactoDestinatario" Type="varchar(max)" />
+          <Property Name="DireccionDestinatario" Type="varchar(max)" />
+          <Property Name="CPDestinatario" Type="varchar" MaxLength="50" />
+          <Property Name="UltimoCheckpoint" Type="varchar" MaxLength="50" />
+          <Property Name="FechaUltimoCheckpoint" Type="date" />
+          <Property Name="HoraUltimoCheckpoint" Type="varchar" MaxLength="50" />
+          <Property Name="detalleultimocheckpoint" Type="varchar(max)" />
+          <Property Name="FechaCarga" Type="date" />
+        </EntityType>
+        <EntityContainer Name="DB_A3F19C_OGModelStoreContainer">
+          <EntitySet Name="csr" EntityType="Self.csr" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DB_A3F19C_OGModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="csr">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NumeroCuenta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Guia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PieceID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Referencia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IATAOrigen" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CiudadOrigen" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="IATADestino" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CiudadDestino" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SVCSubIATA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Ruta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Piezas" Type="Int32" />
+          <Property Name="Peso" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="FechaRecoleccion" Type="DateTime" Precision="0" />
+          <Property Name="FechaPrimerCheckpointTerminal" Type="DateTime" Precision="0" />
+          <Property Name="HoraPrimerCheckpointTerminal" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PrimerCheckpointTerminal" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DescripcionPrimerCheckTerminal" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="DetallesEntregaComentarios" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TiempoTransitoEstimado" Type="Int32" />
+          <Property Name="TiempoTransitoRealizado" Type="Int32" />
+          <Property Name="IntentosEntrega" Type="Int32" />
+          <Property Name="CausaDemora" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FechaIngresoCC" Type="DateTime" Precision="0" />
+          <Property Name="DiasCC" Type="Int32" />
+          <Property Name="Producto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ValorSeguro" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="NombreRemitente" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ContactoRemitente" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="DireccionRemitente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CPRemitente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NombreDestinatario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ContactoDestinatario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DireccionDestinatario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CPDestinatario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UltimoCheckpoint" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FechaUltimoCheckpoint" Type="DateTime" Precision="0" />
+          <Property Name="HoraUltimoCheckpoint" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="detalleultimocheckpoint" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FechaCarga" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityContainer Name="DB_A3F19C_OGEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="csr" EntityType="Self.csr" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DB_A3F19C_OGModelStoreContainer" CdmEntityContainer="DB_A3F19C_OGEntities">
+          <EntitySetMapping Name="csr">
+            <EntityTypeMapping TypeName="DB_A3F19C_OGModel.csr">
+              <MappingFragment StoreEntitySet="csr">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="NumeroCuenta" ColumnName="NumeroCuenta" />
+                <ScalarProperty Name="Guia" ColumnName="Guia" />
+                <ScalarProperty Name="PieceID" ColumnName="PieceID" />
+                <ScalarProperty Name="Referencia" ColumnName="Referencia" />
+                <ScalarProperty Name="IATAOrigen" ColumnName="IATAOrigen" />
+                <ScalarProperty Name="CiudadOrigen" ColumnName="CiudadOrigen" />
+                <ScalarProperty Name="IATADestino" ColumnName="IATADestino" />
+                <ScalarProperty Name="CiudadDestino" ColumnName="CiudadDestino" />
+                <ScalarProperty Name="SVCSubIATA" ColumnName="SVCSubIATA" />
+                <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+                <ScalarProperty Name="Piezas" ColumnName="Piezas" />
+                <ScalarProperty Name="Peso" ColumnName="Peso" />
+                <ScalarProperty Name="FechaRecoleccion" ColumnName="FechaRecoleccion" />
+                <ScalarProperty Name="FechaPrimerCheckpointTerminal" ColumnName="FechaPrimerCheckpointTerminal" />
+                <ScalarProperty Name="HoraPrimerCheckpointTerminal" ColumnName="HoraPrimerCheckpointTerminal" />
+                <ScalarProperty Name="PrimerCheckpointTerminal" ColumnName="PrimerCheckpointTerminal" />
+                <ScalarProperty Name="DescripcionPrimerCheckTerminal" ColumnName="DescripcionPrimerCheckTerminal" />
+                <ScalarProperty Name="DetallesEntregaComentarios" ColumnName="DetallesEntregaComentarios" />
+                <ScalarProperty Name="TiempoTransitoEstimado" ColumnName="TiempoTransitoEstimado" />
+                <ScalarProperty Name="TiempoTransitoRealizado" ColumnName="TiempoTransitoRealizado" />
+                <ScalarProperty Name="IntentosEntrega" ColumnName="IntentosEntrega" />
+                <ScalarProperty Name="CausaDemora" ColumnName="CausaDemora" />
+                <ScalarProperty Name="FechaIngresoCC" ColumnName="FechaIngresoCC" />
+                <ScalarProperty Name="DiasCC" ColumnName="DiasCC" />
+                <ScalarProperty Name="Producto" ColumnName="Producto" />
+                <ScalarProperty Name="ValorSeguro" ColumnName="ValorSeguro" />
+                <ScalarProperty Name="NombreRemitente" ColumnName="NombreRemitente" />
+                <ScalarProperty Name="ContactoRemitente" ColumnName="ContactoRemitente" />
+                <ScalarProperty Name="DireccionRemitente" ColumnName="DireccionRemitente" />
+                <ScalarProperty Name="CPRemitente" ColumnName="CPRemitente" />
+                <ScalarProperty Name="NombreDestinatario" ColumnName="NombreDestinatario" />
+                <ScalarProperty Name="ContactoDestinatario" ColumnName="ContactoDestinatario" />
+                <ScalarProperty Name="DireccionDestinatario" ColumnName="DireccionDestinatario" />
+                <ScalarProperty Name="CPDestinatario" ColumnName="CPDestinatario" />
+                <ScalarProperty Name="UltimoCheckpoint" ColumnName="UltimoCheckpoint" />
+                <ScalarProperty Name="FechaUltimoCheckpoint" ColumnName="FechaUltimoCheckpoint" />
+                <ScalarProperty Name="HoraUltimoCheckpoint" ColumnName="HoraUltimoCheckpoint" />
+                <ScalarProperty Name="detalleultimocheckpoint" ColumnName="detalleultimocheckpoint" />
+                <ScalarProperty Name="FechaCarga" ColumnName="FechaCarga" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
