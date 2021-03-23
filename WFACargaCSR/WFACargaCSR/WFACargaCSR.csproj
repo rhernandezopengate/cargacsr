@@ -143,6 +143,10 @@
       <DependentUpon>Modelo.edmx</DependentUpon>
       <LastGenOutput>Modelo.cs</LastGenOutput>
     </Content>
+    <Content Include="imagenes\expediente %281%29.png" />
+    <Content Include="imagenes\expediente %282%29.png" />
+    <Content Include="imagenes\expediente %283%29.png" />
+    <Content Include="imagenes\expediente.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
