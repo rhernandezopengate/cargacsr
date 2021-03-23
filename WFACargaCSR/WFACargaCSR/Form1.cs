@@ -77,9 +77,10 @@ namespace WFACargaCSR
                         dt.Rows.Add(dr);
                     }
 
-                    progressBar1.Increment(5);
-                    DataTable primeravalidacion = ValidacionPorCuenta(dt);
+                    
                     progressBar1.Increment(20);
+                    DataTable primeravalidacion = ValidacionPorCuenta(dt);
+                    progressBar1.Increment(5);
                     DataTable segundavalidacion = ValidacionReferencia(primeravalidacion);
                     progressBar1.Increment(25);
                     DataTable terceravalicaion = ActualizacionRegistros(segundavalidacion);
