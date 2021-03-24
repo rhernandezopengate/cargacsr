@@ -43,6 +43,7 @@ C:\Users\CarinaFonsecaPerezOG\Source\Repos\cargacsr\WFACargaCSR\WFACargaCSR\obj\
 C:\Users\CarinaFonsecaPerezOG\Source\Repos\cargacsr\WFACargaCSR\WFACargaCSR\obj\Debug\WFACargaCSR.csproj.CopyComplete
 C:\Users\CarinaFonsecaPerezOG\Source\Repos\cargacsr\WFACargaCSR\WFACargaCSR\obj\Debug\WFACargaCSR.exe
 C:\Users\CarinaFonsecaPerezOG\Source\Repos\cargacsr\WFACargaCSR\WFACargaCSR\obj\Debug\WFACargaCSR.pdb
+C:\Users\rhern\Documents\GitHub\cargacsr\WFACargaCSR\WFACargaCSR\bin\Debug\EntityFramework.xml
 C:\Users\rhern\Documents\GitHub\cargacsr\WFACargaCSR\WFACargaCSR\bin\Debug\WFACargaCSR.exe.config
 C:\Users\rhern\Documents\GitHub\cargacsr\WFACargaCSR\WFACargaCSR\bin\Debug\WFACargaCSR.exe
 C:\Users\rhern\Documents\GitHub\cargacsr\WFACargaCSR\WFACargaCSR\bin\Debug\WFACargaCSR.pdb
@@ -52,7 +53,6 @@ C:\Users\rhern\Documents\GitHub\cargacsr\WFACargaCSR\WFACargaCSR\bin\Debug\Syste
 C:\Users\rhern\Documents\GitHub\cargacsr\WFACargaCSR\WFACargaCSR\bin\Debug\System.Security.AccessControl.dll
 C:\Users\rhern\Documents\GitHub\cargacsr\WFACargaCSR\WFACargaCSR\bin\Debug\System.Security.Permissions.dll
 C:\Users\rhern\Documents\GitHub\cargacsr\WFACargaCSR\WFACargaCSR\bin\Debug\System.Security.Principal.Windows.dll
-C:\Users\rhern\Documents\GitHub\cargacsr\WFACargaCSR\WFACargaCSR\bin\Debug\EntityFramework.xml
 C:\Users\rhern\Documents\GitHub\cargacsr\WFACargaCSR\WFACargaCSR\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\rhern\Documents\GitHub\cargacsr\WFACargaCSR\WFACargaCSR\bin\Debug\System.Configuration.ConfigurationManager.xml
 C:\Users\rhern\Documents\GitHub\cargacsr\WFACargaCSR\WFACargaCSR\bin\Debug\System.Security.AccessControl.xml
