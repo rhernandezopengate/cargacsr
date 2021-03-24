@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WFACargaCSR",
+    "\\WFACargaCSR\\packages"
   ],
+  "SelectedNode": "\\WFACargaCSR\\WFACargaCSR.sln",
   "PreviewInSolutionExplorer": false
 }
