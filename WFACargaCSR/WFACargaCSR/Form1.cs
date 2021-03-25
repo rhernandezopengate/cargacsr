@@ -193,7 +193,7 @@ namespace WFACargaCSR
                 foreach (DataRow orow in dt.Select())
                 {
                     string referencia = orow["Referencia"].ToString();
-                    string ultimock = orow["�ltimo Checkpoint"].ToString();
+                    string ultimock = orow["Ultimo Checkpoint"].ToString();
 
                     var csrdata = listaActualizar.Where(x => x.Referencia.Contains(referencia)).FirstOrDefault();
 
@@ -240,7 +240,7 @@ namespace WFACargaCSR
                         //Primer Parametro DataTable
                         //Segundo Parametro BD
                         sqlBulkCopy.ColumnMappings.Add("No de Cuenta", "NumeroCuenta");
-                        sqlBulkCopy.ColumnMappings.Add("Gu�a", "Guia");
+                        sqlBulkCopy.ColumnMappings.Add("Guia", "Guia");
                         sqlBulkCopy.ColumnMappings.Add("Piece ID", "PieceID");
                         sqlBulkCopy.ColumnMappings.Add("Referencia", "Referencia");
                         sqlBulkCopy.ColumnMappings.Add("IATA Origen", "IATAOrigen");
@@ -251,9 +251,9 @@ namespace WFACargaCSR
                         sqlBulkCopy.ColumnMappings.Add("SVC/SVP", "Ruta");
                         sqlBulkCopy.ColumnMappings.Add("Piezas", "Piezas");
                         sqlBulkCopy.ColumnMappings.Add("Peso", "Peso");
-                        sqlBulkCopy.ColumnMappings.Add("Fecha Recolecci�n ", "FechaRecoleccion");
+                        sqlBulkCopy.ColumnMappings.Add("Fecha Recoleccion ", "FechaRecoleccion");
                         //sqlBulkCopy.ColumnMappings.Add("Fecha Recolecci�n ", "FechaPrimerCheckpointTerminal");
-                        sqlBulkCopy.ColumnMappings.Add("Hora Recolecci�n ", "HoraPrimerCheckpointTerminal");
+                        sqlBulkCopy.ColumnMappings.Add("Hora Recoleccion ", "HoraPrimerCheckpointTerminal");
                         //sqlBulkCopy.ColumnMappings.Add("�ltima Incidencia", "PrimerCheckpointTerminal");
                         //sqlBulkCopy.ColumnMappings.Add("�ltima Incidencia", "DescripcionPrimerCheckTerminal");
                         sqlBulkCopy.ColumnMappings.Add("Detalles de entrega / Comentarios", "DetallesEntregaComentarios");
@@ -273,7 +273,7 @@ namespace WFACargaCSR
                         sqlBulkCopy.ColumnMappings.Add("Contacto Destinatario", "ContactoDestinatario");
                         //sqlBulkCopy.ColumnMappings.Add("Direcci�n Destinatario", "DireccionDestinatario");
                         sqlBulkCopy.ColumnMappings.Add("CP Destinatario", "CPDestinatario");
-                        sqlBulkCopy.ColumnMappings.Add("�ltimo Checkpoint", "UltimoCheckpoint");
+                        sqlBulkCopy.ColumnMappings.Add("Ultimo Checkpoint", "UltimoCheckpoint");
                         //sqlBulkCopy.ColumnMappings.Add("Fecha del �ltimo checkpoint", "FechaUltimoCheckpoint");
                         //sqlBulkCopy.ColumnMappings.Add("Hora del �ltimo checkpoint", "HoraUltimoCheckpoint");
                         //sqlBulkCopy.ColumnMappings.Add("Detalles de entrega / Comentarios", "detalleultimocheckpoint");
